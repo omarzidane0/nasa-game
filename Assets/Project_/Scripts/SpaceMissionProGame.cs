@@ -760,8 +760,12 @@ public class SpaceMissionProGame : MonoBehaviour
 
         string buttonText = item.selected ? "SELECTED" : (item.owned ? "SELECT" : "BUY");
         Color buttonColor = item.selected ? green : (item.owned ? cyanDark : cyan);
-        Button(buttonText, card.transform, new Vector2(0.83f, 0.20f), new Vector2(130, 42), buttonColor,
+        Button(buttonText, card.transform, new Vector2(item.owned ? 0.69f : 0.83f, 0.20f),
+            new Vector2(item.owned ? 108 : 130, 42), buttonColor,
             () => PurchaseOrSelect(item));
+        if (item.owned)
+            Button("SELL", card.transform, new Vector2(0.89f, 0.20f), new Vector2(78, 42), gold,
+                () => SellEquipment(item));
     }
 
     private void BuildEquipmentIcon(Transform parent, Equipment item, Vector2 center)
@@ -920,6 +924,17 @@ public class SpaceMissionProGame : MonoBehaviour
                 if (other.category == item.category && other != item) other.selected = false;
             item.selected = true;
         }
+        budgetLabel.text = "BUDGET  " + budget.ToString("N0") + " CR";
+        ShowScreen(GameScreen.Store);
+    }
+
+    private void SellEquipment(Equipment item)
+    {
+        if (!item.owned) return;
+
+        item.owned = false;
+        item.selected = false;
+        budget += item.price;
         budgetLabel.text = "BUDGET  " + budget.ToString("N0") + " CR";
         ShowScreen(GameScreen.Store);
     }

@@ -1,0 +1,3 @@
+This folder is the Unity project root. It must contain Assets, Packages and ProjectSettings directly.
+Unity Editor version: 6000.6.8f1
+Main scene: Assets/Project_/Scenes/MainMenu.unity

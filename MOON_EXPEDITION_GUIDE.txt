@@ -1,0 +1,28 @@
+MOON EXPEDITION — PLAYER GUIDE
+
+MISSION STRUCTURE
+Launch -> Mission Control decisions -> Powered lunar descent -> Touchdown -> EVA exploration -> Return to lander -> Mission report.
+
+PLAYER MOVEMENT
+W / A / S / D or arrow keys: move
+Right mouse button + mouse movement: rotate the third-person camera
+Left Shift: sprint
+Space: low-gravity jump
+
+FIELD TOOLS
+E: collect one nearby rock sample. Three samples must be collected.
+F: run the terrain scanner when close to the marked scanner station.
+B: deploy the navigation beacon when close to its gold deployment pad.
+R: return to the lander. The return is accepted only after all three samples, terrain scan and beacon deployment are completed.
+
+SURVIVAL HUD
+Oxygen and suit battery decrease slowly during surface activity. Tool use also consumes battery. The player should complete field objectives efficiently and return to the lander before reserves become too low.
+
+WORLD FEATURES
+- Procedural low-poly lunar terrain with crater bowls and rims.
+- Earth visible in the black sky with a star field and distant ridges.
+- 3D lunar lander with solar panels, legs, antenna and touchdown sequence.
+- 3D astronaut suit with helmet visor, life-support pack, arms and legs.
+- Third-person walking, sprinting, low-gravity jumping and simple walk-cycle animation.
+- Three sample sites, terrain-scanning station and navigation beacon site.
+- Sample collection, terrain analysis, beacon deployment, mission log and results scoring.

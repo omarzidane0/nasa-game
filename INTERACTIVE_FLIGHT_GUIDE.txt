@@ -1,0 +1,35 @@
+SPACE MISSION DESIGNER — INTERACTIVE FLIGHT UPDATE
+Unity version: 6000.6.8f1
+
+WHAT IS NEW
+1. Mission Control now renders a destination-specific 3D scene for MOON, EARTH or MARS.
+   The planet has a generated surface map, a secondary celestial body, stars, an orbital route,
+   and an animated spacecraft assembled from the player's selected systems.
+2. SHIP VIEW and TARGET VIEW buttons let the player switch the Mission Control camera.
+3. A Flight Command Deck gives the player two command points during each mission event:
+   - CAMERA SCAN: requires the SCIENCE CAMERA; uses 6 power and collects 6 science units.
+   - SPECTRUM SCAN: requires the SPECTROMETER; uses 9 power and collects 10 science units.
+   - TRANSMIT DATA: requires a communication system and untransmitted data; uses 3 power and
+     improves the data link while recording returned science packets.
+   - POWER SAVE: restores 8 power but reduces the data link by 4.
+   Each command can be used once per event. Unavailable commands are disabled and explain why.
+4. Mission success now includes a meaningful data-return condition, not just collection.
+   The report shows both collected and transmitted science data.
+5. The launch scene now has a generated twilight sky, distant terrain silhouettes, horizon glow,
+   and pad/runway markings. Existing rocket motion, boosters, particle effects and audio are retained.
+6. Particle systems are stopped before their duration modules are configured to avoid Unity's
+   runtime warning about changing duration while a particle system is playing.
+
+PLAYER FLOW
+Destination -> Equipment Store -> Spacecraft Assembly -> Launch Control -> countdown and 3D ascent
+-> Mission Control (use command deck, then resolve the event) -> Mission Report.
+
+IMPORTANT
+All resource changes, telemetry, flight times, distances and scoring are simplified gameplay
+simulation values. They are not live telemetry or official NASA engineering specifications.
+The planet maps and 3D spacecraft/launch props are generated procedurally at runtime.
+
+SAFE TESTING
+Open Assets/Project_/Scenes/MainMenu.unity and press Play.
+Keep the previous project folder as a backup until the updated project has compiled and launched
+successfully in your Unity Editor.

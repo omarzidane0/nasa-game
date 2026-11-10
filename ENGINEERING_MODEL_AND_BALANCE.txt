@@ -1,0 +1,72 @@
+SPACE MISSION DESIGNER — ENGINEERING MODEL & GAME BALANCE
+
+SCOPE
+This is an educational decision simulator. It models the relationships between equipment selection, mass, launch capacity, power, communications, mission events, science return and survival resources. It does not predict real flight trajectories or replace aerospace analysis tools.
+
+IN-GAME CATALOG (CREDITS / CR)
+Starting budget: 13,000 CR
+
+Vehicle and system catalogue:
+ATLAS A — 4,800 CR — simulated payload capacity 1,000 kg
+ATLAS B — 7,600 CR — simulated payload capacity 1,800 kg
+ORBITER — 1,600 CR — mass 450 kg — power draw 0.2 kW
+LUNAR / PLANETARY LANDER — 2,100 CR — mass 760 kg — power draw 0.3 kW
+SOLAR ARRAY — 850 CR — mass 110 kg — power generation 3.5 kW
+RTG POWER UNIT — 1,450 CR — mass 145 kg — power generation 5.5 kW
+HIGH-GAIN ANTENNA — 700 CR — mass 70 kg — power draw 0.3 kW
+SCIENCE CAMERA — 500 CR — mass 35 kg — power draw 0.7 kW
+SPECTROMETER — 850 CR — mass 65 kg — power draw 1.2 kW
+
+The catalog is intentionally small so the player has trade-offs without an overwhelming menu. All CR prices and the vehicle capacities above are game-balance values. They are not real commercial launch prices or certified payload-to-destination performance figures.
+
+MISSION LOADOUT EXAMPLES
+EARTH OBSERVATION:
+ATLAS A + ORBITER + SOLAR ARRAY + HIGH-GAIN ANTENNA + SCIENCE CAMERA
+Simulated selected-system mass: 665 kg
+Power generation: 3.5 kW; selected draw: 1.2 kW; margin: 2.3 kW
+Total price: 8,450 CR; remaining budget: 4,550 CR
+
+MOON EXPEDITION:
+ATLAS A + PLANETARY LANDER + SOLAR ARRAY + HIGH-GAIN ANTENNA + SCIENCE CAMERA
+Simulated selected-system mass: 975 kg
+Power generation: 3.5 kW; selected draw: 1.3 kW; margin: 2.2 kW
+Total price: 8,950 CR; remaining budget: 4,050 CR
+This example is within the prototype capacity and power limits.
+
+MARS EXPEDITION:
+ATLAS B + PLANETARY LANDER + RTG POWER UNIT + HIGH-GAIN ANTENNA + SPECTROMETER
+Simulated selected-system mass: 1,040 kg
+Power generation: 5.5 kW; selected draw: 1.8 kW; margin: 3.7 kW
+Total price: 12,700 CR; remaining budget: 300 CR
+
+CORE FORMULAS
+Payload mass = sum of selected non-launch-vehicle equipment masses.
+Payload utilization (%) = payload mass / simulated vehicle capacity * 100.
+Power margin (kW) = sum of selected generation - sum of selected draw.
+Mission validation requires a selected launch vehicle, spacecraft, power source, communications system and instrument; mass must not exceed simulated capacity; power margin must meet the mission's minimum; destination-specific rules must be satisfied.
+
+Mission power margins in the prototype:
+Earth: 0.5 kW minimum
+Moon: 0.5 kW minimum
+Mars: 1.0 kW minimum
+
+MISSION LOOP
+Earth: orbital observation decisions (cloud cover, orbital drift, data downlink), data collection/transmission and mission report.
+Moon: transfer decisions, powered descent sequence, EVA, 3 geology samples, terrain scan, beacon deployment, rover driving, safe return.
+Mars: deep-space transfer decisions, simplified entry/descent sequence, EVA, 3 rock cores, regolith scan, weather/navigation beacon, rover driving, safe return.
+
+FLIGHT DECISIONS
+Each mission event changes some combination of power reserve, communications link, vehicle integrity, science data, score and elapsed mission days. The values are game-state deltas, not real spacecraft telemetry.
+
+SURFACE RESOURCES
+Oxygen reserve and suit battery decrease during EVA. Rover battery decreases while driving and boosting. The player must finish objectives and return to the lander before resources reach unsafe thresholds. Surface temperature is displayed as a mission setting, not a thermodynamic model.
+
+SCIENCE DATA
+Sample collection, terrain analysis and communications increase the science return. The mission report records collected samples, scan status, beacon status, return confirmation, data and final resource levels.
+
+KNOWN SIMPLIFICATIONS
+- Mars atmospheric entry, heat shield and parachute dynamics are not physically solved; the descent is a timed gameplay sequence.
+- Lunar/Martian gravity, walking and rover motion are simplified gameplay controls.
+- Rocket ascent and booster separation are staged visual animation, not a validated orbital mechanics solver.
+- Power and communications are resource meters, not detailed electrical or RF simulations.
+- Prices, capacities, durations, mass and power values are prototype balancing values.

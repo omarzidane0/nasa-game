@@ -1,0 +1,39 @@
+SPACE MISSION DESIGNER — LATEST GAMEPLAY BUILD
+Unity Editor: 6000.6.8f1
+Main scene: Assets/Project_/Scenes/MainMenu.unity
+
+WHAT CHANGED
+
+1) EARTH OBSERVATION
+- Once the orbital flight events are completed, the Earth mission now opens an orbital imaging operations screen instead of jumping directly to Results.
+- The left panel renders a 3D Earth globe with the project's Earth_Diffuse map, atmospheric shell, an imaging satellite and its solar wings.
+- Capture buttons lock the orbital camera onto the selected region and show a target reticle: Amazonas Basin, North Atlantic, or Central Sahara.
+- The capture action requires the Multispectral Imager (shown internally as SCIENCE CAMERA) and costs 6 gameplay power units per frame.
+- Captured frames must be downlinked over the X-band communication system. Each downlink batch costs 3 gameplay power units.
+- At least two frames must be captured and transmitted before the survey can be completed.
+- This is a local 3D mission simulation, not a live satellite feed or live NASA imagery service.
+
+2) MOON AND MARS SURFACE OPERATIONS
+- Mars and Moon now use visibly different suit palettes, terrain colors and terrain relief.
+- The Mars suit uses a tan/rust pressure-suit palette; the lunar EVA suit remains white/gray with darker blue/gold components.
+- Movement uses approximate surface-gravity values: Moon 1.62 m/s^2 and Mars 3.71 m/s^2. Jump arcs and movement speeds differ accordingly.
+- A visible, illuminated EVA perimeter marks the authorized area. The astronaut is blocked from crossing it and receives a TURN BACK warning near the limit. The rover is clamped to the same operational zone.
+- Right mouse or middle mouse drag rotates the view. Mouse wheel zooms. WASD/arrow keys move, Shift sprints, Space jumps, Q enters/exits the rover, E collects a sample, F runs a terrain/regolith analysis, B deploys the beacon, and R returns to the lander when the objectives are complete and the astronaut is close enough.
+
+3) LAUNCH PAD
+- The Earth-side launch setting includes distant mission-control buildings, control-room windows, rooftop antenna dishes, an observation tower and service/access roads. These belong to the surface environment and disappear during the transition to space.
+
+4) EQUIPMENT AND COSTS
+- Equipment cards use clearer engineering descriptions such as medium-lift/heavy-lift launch vehicle, Earth-observation spacecraft bus, powered descent lander, deployable photovoltaic array, long-life power module, X-band high-gain antenna and multispectral imager.
+- Values are mission-planning credits (CR) balanced for gameplay. They are not actual vendor quotes, NASA procurement prices, or certified vehicle performance specifications.
+
+OPENING THE PROJECT
+1. Extract this ZIP to a new folder.
+2. In Unity Hub choose Add / Open and select the extracted project root — the folder containing Assets, Packages and ProjectSettings.
+3. Open Assets/Project_/Scenes/MainMenu.unity and press Play.
+
+IMPORTANT TESTING NOTE
+The Unity Editor is not installed in the file-generation environment, so this build was checked for project structure, ZIP integrity, and basic C# delimiter/string balance, but it was not compiled or Play-tested in Unity. If Unity reports a compiler error, use the Console's first red error as the starting point.
+
+VISUALS NOTE
+The current launch pad, spacecraft, astronaut, rover, satellite and surface environment are procedural Unity models. This update improves composition and gameplay presentation, but does not add photorealistic third-party FBX assets.

@@ -1,0 +1,22 @@
+SPACE MISSION DESIGNER - EARTH & MARS GAMEPLAY UPDATE
+
+EARTH OBSERVATION
+After completing the Earth flight events, the player now enters EARTH OBSERVATION OPERATIONS instead of being sent directly to the results screen.
+- Capture three orbital imaging targets: Amazon forest canopy, North Atlantic ocean, and Sahara surface/dust.
+- Each capture requires the Science Camera and consumes 6 gameplay power units.
+- Each capture adds science data and score.
+- Transmit captured image packets using the communications system; each downlink consumes 3 power units and improves the link.
+- Finish Observation unlocks after at least two targets are captured and two image batches are transmitted.
+- Final mission grade reflects image capture, downlink, power reserve and communications quality.
+
+MARS
+Mars uses the dedicated Mars landing and surface route already present in the project. The interface labels the target as Jezero Crater, uses Martian environmental color/temperature labels, and asks the player to collect three Martian rock cores, analyze regolith, deploy a weather/navigation beacon, and return to the lander. Rover and astronaut controls are available in the surface operation screen.
+
+LAUNCH PAD ENVIRONMENT
+Added distant mission-control buildings, observation tower, illuminated glass windows, rooftop antenna dishes and a remote access road to the Earth launch scene. These objects are parented to the launch-surface environment and are hidden when the launch sequence transitions into space.
+
+ENGINEERING VALUES
+All prices, mass/power values, resource consumption and mission scoring are simplified gameplay values. They are not official NASA procurement prices or flight-certified engineering calculations.
+
+OPENING
+Open the folder containing Assets, Packages and ProjectSettings with Unity 6000.6.8f1. Main scene: Assets/Project_/Scenes/MainMenu.unity.

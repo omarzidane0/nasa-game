@@ -1,0 +1,16 @@
+SPACE MISSION DESIGNER - COMPILE FIX
+Unity Editor: 6000.6.8f1
+
+This package fixes the compile error reported at:
+Assets/Project_/Scripts/SpaceMissionProGame.cs (3279,75)
+
+Cause:
+BuildEVAArm used the blue material for the forearm ID band but the method did not receive that material as a parameter.
+
+Fix:
+- Added Material blue to BuildEVAArm's parameter list.
+- Passed the already-created blue material from BuildLunarAstronaut to both arm builders.
+- No mission values, scene references, purchases, or launch sequence logic were changed.
+
+Open this folder as the Unity project root. It must contain Assets, Packages, and ProjectSettings directly.
+Open Assets/Project_/Scenes/MainMenu.unity after Unity finishes importing.

@@ -1,0 +1,22 @@
+SPACE MISSION DESIGNER - UNITY PROJECT
+Unity Editor version: 6000.6.8f1
+
+IMPORTANT: Extract this ZIP completely before opening it.
+The folder you select in Unity Hub MUST contain these three folders directly:
+  Assets
+  Packages
+  ProjectSettings
+
+Do NOT select the ZIP file, the Assets folder, or a parent folder.
+
+Unity Hub:
+  Projects > Add > Add project from disk > choose THIS extracted folder > Select Folder
+
+Main scene:
+  Assets/Project_/Scenes/MainMenu.unity
+
+Alternative:
+  Double-click OPEN_PROJECT_DIRECTLY.bat (requires Unity 6000.6.8f1 installed in the default Unity Hub path).
+
+If Unity asks to enter Safe Mode, take a screenshot of the Console and share it.
+Do not delete your previous working project until this one opens successfully.

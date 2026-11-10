@@ -1,0 +1,19 @@
+LUNAR REALISM UPDATE — CHANGE SUMMARY
+
+1) LAUNCH TRANSITION
+Previously, boosters could remain at pad level because they were independent of the rising rocket. They are now children of the launch vehicle during ascent. They detach at the later separation phase, after the launch tower has been left behind. The surface launch environment and pad smoke are hidden during the transition to orbital view; a star field and textured Earth limb are revealed and follow the launch camera.
+
+2) LUNAR ENVIRONMENT
+The lunar ground now uses dedicated regolith color and normal maps, a denser terrain mesh, additional crater profiles and distant ridgeline meshes. Rock fields and sample boulders are irregular multi-face meshes with small angular fragments, rather than scaled spheres. A 360-degree lunar sky panorama places Earth in the forward sky above the horizon.
+
+3) EVA ASTRONAUT
+The player character is rebuilt from a larger set of articulated components: pressure torso, helmet shell, layered visor and locking ring, communications pods, PLSS backpack, oxygen bottles, chest telemetry unit, articulated upper/lower arms, gloves, articulated legs, knee guards, ankle seals and reinforced boots. The current walk cycle animates the limb pivots.
+
+4) CAMERA AND LEGIBILITY
+The surface camera is closer to the astronaut and framed to keep Earth visible over the lunar horizon. The lunar render texture is 1920x1080, and unsupported checkmark glyphs were replaced with text that works with the included TMP font.
+
+5) PLAYER CONTROL
+The astronaut can enter the six-wheel rover when nearby. In rover mode, WASD steers, Shift boosts, Q exits, the wheels rotate while driving, and rover battery is tracked separately from suit battery.
+
+LIMITATIONS
+This is a procedural prototype built from Unity meshes and generated textures. It is not yet a photoreal scanned environment, a mocap astronaut, or a physically validated launch/landing simulator. A later art pass can replace procedural meshes with licensed FBX character/vehicle assets while keeping the mission logic.

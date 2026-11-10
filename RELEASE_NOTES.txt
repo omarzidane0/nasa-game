@@ -1,0 +1,18 @@
+SPACE MISSION DESIGNER - UI ALIGNMENT FIX
+Unity version: 6000.6.8f1
+
+This update corrects the equipment-store icon layout. Icon pieces are now children of a dedicated 112x112 RectTransform, with all parts positioned in local pixel space so they remain inside their card icon plate.
+
+Text label pivots now follow text alignment (left/center/right) instead of incorrectly copying normalized anchor coordinates. This improves alignment across store cards, assembly information, headers, and buttons.
+
+No mission rules, prices, budget logic, or screen-navigation logic were intentionally changed.
+
+Open Assets/Project_/Scenes/MainMenu.unity and press Play.
+Engineering values and prices remain illustrative gameplay values, not official NASA specifications.
+
+3D Launch & Audio update (November 2026)
+- Added a runtime-built 3D rocket launch pad, steel launch tower, rocket core, nose cone, fins, engine bells and two detachable side boosters.
+- Launch control now renders a live 3D camera view, runs an audible 10-second countdown, engine ignition, exhaust flame/smoke, liftoff, camera tracking and booster separation before entering Mission Control.
+- Spacecraft Assembly now shows a rotating 3D spacecraft preview that changes according to selected power, lander, communications and instrument systems.
+- Added original synthesized UI, countdown, ignition, engine-loop, liftoff, radio and deep-space ambience WAV effects in Assets/Resources/Audio.
+- Existing mission selection, store, budget, validation and in-flight decision logic have been preserved.
